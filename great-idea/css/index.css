@@ -63,4 +63,201 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+body, .header-division, .section-division, .middle-img
+{
+	width: 876px; /* this is the width of the full middle image */
+}
+
+body
+{
+	height: auto;
+	margin-left: 75px;
+}
+
+.nav-elements, .nav-image, .header-text, .get-started, .header-image,
+.features, .about, .services, .product, .vision
+{ display: inline-block; }
+
+header, section { width: 100%; }
+
+.nav-elements
+{
+	margin-top: 25px;
+	height: 50px;
+}
+
+/* Stretch Goal #4, setting all images as background images in CSS */
+.nav-image 
+{ 
+	/* Must set a width/height or the div will be 0px and won't show up. */
+	width: 183px;
+	height: 36px;
+	
+	background-image: url("../img/logo.png");
+	color: #FFFFFF;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+nav
+{
+	background-color: lightgray;
+	
+	/* This is for automatic scrolling and keeping the nav at the top Stretch Goal #1
+	note this will offset the navigation to where it doesn't match up properly in the flow */
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	
+}
+
+nav a
+{
+	text-decoration: none;
+	color: #A7A7A7;
+	margin-right: 60px;
+	margin-left: 10px;
+	
+}
+
+header
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.header-text
+{
+	width: 40%;
+	text-align: center;
+	padding: 50px 0 50px 0;
+	margin-left: 100px;
+}
+
+header h1 { font-size: 72px; }
+
+.get-started
+{
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px 35px 10px 35px;
+}
+
+/* Stretch Goal #4, setting all images as background images in CSS */
+.header-image 
+{ 
+	/* Must set a width/height or the div will be 0px and won't show up. */
+	width: 379px;
+	height: 379px;
+	
+	background-image: url("../img/header-img.png");
+	color: #FFFFFF;	
+	margin-right: 10px;
+}
+
+.header-division, .section-division
+{
+	height: 1px;
+	background-color: #000000;
+	border: 0 none;
+	
+}
+
+.header-division { margin: 100px 0px 25px 0; }
+.section-division { margin: 10px 0px 25px 0; }
+
+h2 { font-weight: bold; }
+
+/* This zeros out all font sizes and removes white space so 50%/50% width will fit into a 100% width body */
+section { font-size: 0; }
+
+.features, .about, .services, .product, .vision
+{
+	width: 50%;
+	font-size: 16px; /* re-establish font size here */
+	margin: 25px 0px 25px 0px;
+}
+
+.services, .product, .vision
+{
+	width: 32%;
+	margin-left: 10px;
+}
+
+/* Stretch Goal #4, setting all images as background images in CSS */
+.middle-img
+{
+	/* Must set a width/height or the div will be 0px and won't show up. */
+	height: 182px;
+	background-image: url("../img/mid-page-accent.jpg");
+	color: #FFFFFF;
+}
+
+/* Creates a double-spaced line on lines 3 and 4 */
+address p:nth-child(3), address p:nth-child(4) { line-height: 2; }
+
+footer
+{
+	/* Stretch Goal #2 on footer using Google Fonts */
+	font-family: 'Aguafina Script'; font-size: 16px;
+	text-align: center;
+	margin: 25px 0px 25px 0px;
+	
+}
+
+/* Stretch Goal #5 animations on the nav bar buttons*/
+@keyframes button-animation
+{
+	0% { background-color: #62BEFE; }
+  50% { background-color: #A4DAFF; }
+  100% { background-color: #D9EFFF; }
+}
+
+nav a:hover
+{
+	animation-name: button-animation;
+  	animation-duration: 1.5s; 
+	animation-timing-function: ease-out; 
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running; 
+}
+
+.product { margin-left: 10px; }
+
+.product h2
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.product-image01, .product-image02, .product-image03
+{
+	width: 100%;
+	height: 156px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.product-image01 { background-image: url("../img/prod01.jpg"); }
+.product-image02 { background-image: url("../img/prod02.jpg"); }
+.product-image03 { background-image: url("../img/prod03.jpg"); }
+
+.purchase-prod
+{
+	margin-top: 20px;
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px 35px 10px 35px;
+}
+
+.product .purchase-prod:hover
+{
+	border: 4px solid red;
+}
+
