@@ -70,6 +70,16 @@ body, nav .header-division, .section-division, .middle-img
 	width: 876px; /* this is the width of the full middle image */
 }
 
+nav, header, footer, .header-text, .main-content, .secondary-content
+{
+	display: flex;
+}
+
+.nav-image, .header-image, .middle-image
+{
+	color: #FFFFFF;
+}
+
 body
 {
 	height: auto;
@@ -78,7 +88,6 @@ body
 
 nav
 {
-	display: flex;
 	margin-top: 20px;
 }
 
@@ -101,31 +110,30 @@ nav a
 { 
 	/* Must set a width/height or the div will be 0px and won't show up. */
 	width: 183px;
-	height: 36px;
-	
+	height: 36px;	
 	background-image: url("../img/logo.png");
-	color: #FFFFFF;
 	margin-left: 10px;
 	vertical-align: middle;
 }
 
 header
 {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: flex-end;
 	margin-top: 50px;
 	margin-bottom: 75px;
 }
 
-header h1 { font-size: 72px; text-align: center; }
+header h1 
+{ 
+	font-size: 72px; 
+	text-align: center; 
+}
 
 .header-text
 {
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	margin: 50px 50px 75px 0px;
 }
 
 .get-started
@@ -139,10 +147,8 @@ header h1 { font-size: 72px; text-align: center; }
 { 
 	/* Must set a width/height or the div will be 0px and won't show up. */
 	width: 379px;
-	height: 379px;
-	
+	height: 379px;	
 	background-image: url("../img/header-img.png");
-	color: #FFFFFF;	
 	margin-right: 10px;
 }
 
@@ -153,14 +159,7 @@ header h1 { font-size: 72px; text-align: center; }
 	border: 0 none;
 }
 
-.main-content
-{
-	margin: 35px 0px 35px 0px;
-	display: flex;
-}
-
-/* This zeros out all font sizes and removes white space so 50%/50% width will fit into a 100% width body 
-section { font-size: 0; }*/
+.main-content, .secondary-content { margin: 35px 0px 35px 0px; }
 
 /* Stretch Goal #4, setting all images as background images in CSS */
 .middle-img
@@ -168,20 +167,19 @@ section { font-size: 0; }*/
 	/* Must set a width/height or the div will be 0px and won't show up. */
 	height: 182px;
 	background-image: url("../img/mid-page-accent.jpg");
-	color: #FFFFFF;
 }
 
-.secondary-content
-{
-	margin: 35px 0px 35px 0px;
-	display: flex;
-}
+.services { padding-right: 20px; }
+.vision { padding-left: 20px; }
 
 /*Creates a double-spaced line on lines 3 and 4 */
 address p:nth-child(3), address p:nth-child(4) { line-height: 2; }
 
-.address
+.address { margin-top: 25px; }
+
+footer
 {
-	margin-top: 25px;
+	justify-content: center;
+	margin: 25px 0px 25px 0px;
 }
 
