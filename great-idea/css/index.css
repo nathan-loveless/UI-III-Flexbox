@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-body, nav .header-division, .section-division, .middle-img
+body, nav .header-division, .section-division, .middle-img, .services-header-image
 {
 	width: 876px; /* this is the width of the full middle image */
 }
@@ -75,7 +75,7 @@ nav, header, footer, .header-text, .main-content, .secondary-content
 	display: flex;
 }
 
-.nav-image, .header-image, .middle-image
+.nav-image, .header-image, .middle-image, .services-header-image
 {
 	color: #FFFFFF;
 }
@@ -123,10 +123,27 @@ header
 	margin-bottom: 75px;
 }
 
+.services-header
+{
+	margin-bottom: 35px;
+}
+
 header h1 
 { 
 	font-size: 72px; 
 	text-align: center; 
+}
+
+.services-header
+{
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.services-header h1
+{
+	text-align: left;
+	font-size: 36px;
 }
 
 .header-text
@@ -150,6 +167,14 @@ header h1
 	height: 379px;	
 	background-image: url("../img/header-img.png");
 	margin-right: 10px;
+}
+
+.services-header-image
+{
+	height: 200px;
+	background-image: url("../img/services-header.jpg");
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .header-division, .section-division
@@ -181,5 +206,66 @@ footer
 {
 	justify-content: center;
 	margin: 25px 0px 25px 0px;
+}
+
+.services-section
+{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	margin: 10px 0px 35px 0px;
+
+}
+
+.services-desc
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #F4F4F4;
+	width: 48%;
+	margin-top: 35px;
+	padding: 20px 20px 20px 20px;
+	border: 2px solid black;
+}
+
+.learn-more
+{
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #FEFEFE;
+	padding: 10px 25px 10px 25px;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.services-facts
+{
+	display: flex;
+	margin-top: 35px;
+}
+
+.r-column
+{
+	padding: 20px 45px 20px 0px;
+}
+
+.r-column ul
+{
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	padding: 0px;*/
+	margin-top: 20px;
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 2;
+}
+
+.services-footer
+{
+	margin-top: 50px;
 }
 
