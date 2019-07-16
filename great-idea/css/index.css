@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-body, nav .header-division, .section-division, .middle-img, .services-header-image
+body, nav .header-division, .section-division, .middle-img, .services-header-image, .features-header-image
 {
 	width: 876px; /* this is the width of the full middle image */
 }
@@ -75,7 +75,8 @@ nav, header, footer, .header-text, .main-content, .secondary-content
 	display: flex;
 }
 
-.nav-image, .header-image, .middle-image, .services-header-image
+.nav-image, .header-image, .middle-image, .services-header-image, .features-header-image, .features1-image, .features2-image, 
+.features3-image, .features4-image, .features5-image, .features6-image
 {
 	color: #FFFFFF;
 }
@@ -177,6 +178,27 @@ header h1
 	margin-bottom: 25px;
 }
 
+.features-header-image
+{
+	height: 305px;
+	background-image: url("../img/features.png");
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.features1-image, .features2-image, .features3-image, .features4-image, .features5-image, .features6-image
+{
+	width: 100px;
+	height: 93px;
+}
+
+.features1-image { background-image: url("../img/features01.png"); }
+.features2-image { background-image: url("../img/features02.png"); }
+.features3-image { background-image: url("../img/features03.png"); }
+.features4-image { background-image: url("../img/features04.png"); }
+.features5-image { background-image: url("../img/features05.png"); }
+.features6-image { background-image: url("../img/features06.png"); }
+
 .header-division, .section-division
 {
 	height: 1px;
@@ -267,5 +289,17 @@ footer
 .services-footer
 {
 	margin-top: 50px;
+}
+
+.features-section
+{
+	display: flex;
+	flex-flow: wrap;
+}
+
+.features
+{
+	display: flex;
+	width: 100%;
 }
 
