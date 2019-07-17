@@ -311,7 +311,7 @@ footer
 	flex-wrap: wrap;
 }
 
-.features
+.features-features
 {
 	display: flex;
 	align-content: center;
@@ -320,18 +320,18 @@ footer
 
 }
 
-.features:nth-child(1), .features:nth-child(3), .features:nth-child(5)
+.features-features:nth-child(1), .features-features:nth-child(3), .features-features:nth-child(5)
 {
 	flex-flow: row-reverse;
 }
 
-.features:hover
+.features-features:hover
 {
 	background-color: lightblue;
 	color: white;
 }
 
-.features p
+.features-features p
 {
 	width: 85%;
 	align-self: center;
@@ -339,7 +339,7 @@ footer
 	
 }
 
-.features div
+.features-features div
 {
 	width: 15%;
 }
